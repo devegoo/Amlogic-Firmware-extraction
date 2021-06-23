@@ -6,13 +6,13 @@ code is not working in 100% but extract function working
 
 Find the device for your micro SD card (formatted with FAT32) with lsblk"
 
-sudo umount /dev/sdX*
+'sudo umount /dev/sdX*
 
 sudo dd if=aml_sdc_burn.UBOOT of=/dev/sdX bs=1 count=442
 
 sudo dd if=aml_sdc_burn.UBOOT of=/dev/sdX seek=1 skip=1 bs=512
 
-sync
+sync'
 
 "and finally, re-mount the SD card/flash drive, 
 
@@ -20,11 +20,11 @@ Copy the firmware file and aml_sdc_burn.ini to the root of the device,
 
 and rename the firmware to aml_upgrade_package.img to match the string in aml_sdc_burn.ini"
 
-cp aml_sdc_burn.ini aml_sdc_burn.UBOOT [device-mount-point] 
+'cp aml_sdc_burn.ini aml_sdc_burn.UBOOT [device-mount-point] 
 
 cp aml_s912_q6330-R-BOX-PRO-3gddr-mac-20161015.img [device-mount-point]/aml_upgrade_package.img 
 
-sudo umount /dev/sdX*
+sudo umount /dev/sdX*'
 
 "Now make sure no other USB devices or SD cards are inserted in the TV box,
 
