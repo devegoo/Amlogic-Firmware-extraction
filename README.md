@@ -1,4 +1,4 @@
-# Amlogic-Firmware-extraction
+# Amlogic-Firmware-extraction FOR LINUX
 
 code is not working in 100% but extract function working
 
