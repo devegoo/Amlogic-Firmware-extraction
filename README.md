@@ -4,7 +4,7 @@ code is not working in 100% but extract function working
 
 "You’ll just need aml_sdc_burn.ini and aml_sdc_burn.UBOOT, plus the IMG file itself to create a bootable mass storage device.
 
-Now find the device for your micro SD card (formatted with FAT32) with lsblk"
+Find the device for your micro SD card (formatted with FAT32) with lsblk"
 
 sudo umount /dev/sdX*
 
@@ -16,7 +16,7 @@ sync
 
 "and finally, re-mount the SD card/flash drive, 
 
-copy the firmware file and aml_sdc_burn.ini to the root of the device,
+Copy the firmware file and aml_sdc_burn.ini to the root of the device,
 
 and rename the firmware to aml_upgrade_package.img to match the string in aml_sdc_burn.ini"
 
