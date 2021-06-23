@@ -25,7 +25,7 @@ and rename the firmware to aml_upgrade_package.img to match the string in aml_sd
 
 cp aml_sdc_burn.ini aml_sdc_burn.UBOOT [device-mount-point] 
 
-cp aml_s912_q6330-R-BOX-PRO-3gddr-mac-20161015.img [device-mount-point]/aml_upgrade_package.img 
+cp <your_aml_firmware_file_name>.img [device-mount-point]/aml_upgrade_package.img 
 
 sudo umount /dev/sdX*
 
